@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bBYMKX+jF17LMlMl9mDsewDWM7bcHioXyBqyoOkB7jSjjsqiUrLK1ACbR7abqw4rcU5rcdRRIQ160MKPhJhL7w==",
+  "dgSpecHash": "682YoZgZ86NXn6KzmBhEb8TfrMEkIELCBcrk/WDNk6+K8mCyWtVbY5BJcUEqnFxp/57itW3v0GF4PidzjQWt6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\jaehanbae_vog_backend_codechalleneg\\VogCodeChallenge.API\\VogCodeChallenge.API.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

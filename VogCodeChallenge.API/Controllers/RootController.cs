@@ -22,8 +22,8 @@ namespace VogCodeChallenge.API.Controllers
 				},
 				employeesByDepartment = new
 				{
-					development = "https://localhost:44319/api/employees/department/001",
-					sales = "https://localhost:44319/api/employees/department/002",
+					development = Url.Link(nameof(EmployeesController.GetAllEmployees), null) + "/department/001",
+					sales = Url.Link(nameof(EmployeesController.GetAllEmployees), null) + "/department/002",
 				}
 			};
 
