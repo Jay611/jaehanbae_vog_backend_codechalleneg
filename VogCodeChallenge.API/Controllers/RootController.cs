@@ -19,6 +19,11 @@ namespace VogCodeChallenge.API.Controllers
 				employees = new
 				{
 					href = Url.Link(nameof(EmployeesController.GetAllEmployees), null)
+				},
+				employeesByDepartment = new
+				{
+					development = "https://localhost:44319/api/employees/department/001",
+					sales = "https://localhost:44319/api/employees/department/002",
 				}
 			};
 

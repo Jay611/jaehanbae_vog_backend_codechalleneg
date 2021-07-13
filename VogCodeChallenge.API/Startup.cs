@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using VogCodeChallenge.API.Services;
 
 namespace VogCodeChallenge.API
 {
@@ -27,6 +28,8 @@ namespace VogCodeChallenge.API
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+
+			services.AddScoped<IEmployeeService, EmployeeService>();
 
 			// Use in-memory database for quick dev and testing
 			// TODO: Swap out for a real database in production

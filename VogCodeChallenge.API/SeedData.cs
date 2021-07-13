@@ -50,7 +50,7 @@ namespace VogCodeChallenge.API
 
 			var dep1 = new Department
 			{
-				Id = Guid.Parse("301df04d-8679-4b1b-ab92-0a586ae53dd1"),
+				Id = "001",
 				Name = "Development",
 				Address = "72 Confederation Dr., Toronto, Canada",
 			};
@@ -62,7 +62,7 @@ namespace VogCodeChallenge.API
 
 			var dep2 = new Department
 			{
-				Id = Guid.Parse("301df04d-8679-4b1b-ab92-0a586ae53dd2"),
+				Id = "002",
 				Name = "Sales",
 				Address = "72 Confederation Dr., Toronto, Canada",
 			};
