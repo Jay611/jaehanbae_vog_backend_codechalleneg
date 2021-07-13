@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace VogCodeChallenge.API
 {
@@ -26,6 +27,11 @@ namespace VogCodeChallenge.API
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+
+			// Use in-memory database for quick dev and testing
+			// TODO: Swap out for a real database in production
+			services.AddDbContext<EmployeeApiDbContext>(
+				options => options.UseInMemoryDatabase("employeedb"));
 
 			services.AddRouting(options => options.LowercaseUrls = true);
 		}

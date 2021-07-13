@@ -8,9 +8,8 @@ namespace VogCodeChallenge.API.Models
 	public class Department
 	{
 		public Guid Id { get; set; }
-
 		public string Name { get; set; }
 		public string Address { get; set; }
-		public List<Employee> Employees;
+		public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 	}
 }
