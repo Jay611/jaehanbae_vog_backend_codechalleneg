@@ -1,51 +1,23 @@
-# AWS Lambda Simple DynamoDB Function Project
+## log of DynamoDbEvent
 
-This starter project consists of:
-* Function.cs - class file containing a class with a single function handler method
-* aws-lambda-tools-defaults.json - default argument settings for use with Visual Studio and command line deployment tools for AWS
-
-You may also have a test project depending on the options selected.
-
-The generated function handler responds to events on an Amazon DynamoDB stream and serializes the records to a JSON string which are written to the function's execution log. Replace the body of this method, and parameters, to suit your needs.
-
-After deploying your function you must configure an Amazon DynamoDB stream as an event source to trigger your Lambda function.
-
-## Here are some steps to follow from Visual Studio:
-
-To deploy your function to AWS Lambda, right click the project in Solution Explorer and select *Publish to AWS Lambda*.
-
-To view your deployed function open its Function View window by double-clicking the function name shown beneath the AWS Lambda node in the AWS Explorer tree.
-
-To perform testing against your deployed function use the Test Invoke tab in the opened Function View window.
-
-To configure event sources for your deployed function, for example to have your function invoked when an object is created in an Amazon S3 bucket, use the Event Sources tab in the opened Function View window.
-
-To update the runtime configuration of your deployed function use the Configuration tab in the opened Function View window.
-
-To view execution logs of invocations of your function use the Logs tab in the opened Function View window.
-
-## Here are some steps to follow to get started from the command line:
-
-Once you have edited your template and code you can deploy your application using the [Amazon.Lambda.Tools Global Tool](https://github.com/aws/aws-extensions-for-dotnet-cli#aws-lambda-amazonlambdatools) from the command line.
-
-Install Amazon.Lambda.Tools Global Tools if not already installed.
-```
-    dotnet tool install -g Amazon.Lambda.Tools
-```
-
-If already installed check if new version is available.
-```
-    dotnet tool update -g Amazon.Lambda.Tools
-```
-
-Execute unit tests
-```
-    cd "SimpleDynamoDBFunction/test/SimpleDynamoDBFunction.Tests"
-    dotnet test
-```
-
-Deploy function to AWS Lambda
-```
-    cd "SimpleDynamoDBFunction/src/SimpleDynamoDBFunction"
-    dotnet lambda deploy-function
-```
+2021-07-13 22:56:15: START RequestId: afc328e4-da64-4ec1-bf7b-226d8965839f Version: $LATEST\
+2021-07-13 22:56:15: Beginning to process 1 records...\
+2021-07-13 22:56:15: Event ID: 31cfecff3bbc8cdbde5f27f0605d3697\
+2021-07-13 22:56:15: Event Name: MODIFY\
+2021-07-13 22:56:15: Stream processing complete.\
+2021-07-13 22:56:15: END RequestId: afc328e4-da64-4ec1-bf7b-226d8965839f\
+2021-07-13 22:56:15: REPORT RequestId: afc328e4-da64-4ec1-bf7b-226d8965839f	Duration: 360.49 ms	Billed Duration: 361 ms	Memory Size: 256 MB	Max Memory Used: 65 MB	Init Duration: 159.89 ms\
+2021-07-13 22:58:26: START RequestId: ebc19e28-f5be-4997-94cb-f444d207652d Version: $LATEST\
+2021-07-13 22:58:26: Beginning to process 1 records...\
+2021-07-13 22:58:26: Event ID: ec64ff58bdfc8f303585cc9ffa2778b8\
+2021-07-13 22:58:26: Event Name: REMOVE\
+2021-07-13 22:58:26: Stream processing complete.\
+2021-07-13 22:58:26: END RequestId: ebc19e28-f5be-4997-94cb-f444d207652d\
+2021-07-13 22:58:26: REPORT RequestId: ebc19e28-f5be-4997-94cb-f444d207652d	Duration: 3.48 ms	Billed Duration: 4 ms	Memory Size: 256 MB	Max Memory Used: 65 MB	\
+2021-07-13 23:00:16: START RequestId: acf6b424-deb7-4c17-a87a-5f7ea8631494 Version: $LATEST\
+2021-07-13 23:00:16: Beginning to process 1 records...\
+2021-07-13 23:00:16: Event ID: f0679fcb2ad120d2147fba8b8d5dda5f\
+2021-07-13 23:00:16: Event Name: INSERT\
+2021-07-13 23:00:16: Stream processing complete.\
+2021-07-13 23:00:16: END RequestId: acf6b424-deb7-4c17-a87a-5f7ea8631494\
+2021-07-13 23:00:16: REPORT RequestId: acf6b424-deb7-4c17-a87a-5f7ea8631494	Duration: 1.25 ms	Billed Duration: 2 ms	Memory Size: 256 MB	Max Memory Used: 65 MB\
